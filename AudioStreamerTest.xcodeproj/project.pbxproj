@@ -1,0 +1,433 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		57D8F2F01B546BB900E3E263 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 57D8F2EF1B546BB900E3E263 /* main.m */; };
+		57D8F2F31B546BB900E3E263 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 57D8F2F21B546BB900E3E263 /* AppDelegate.m */; };
+		57D8F2F61B546BB900E3E263 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57D8F2F51B546BB900E3E263 /* ViewController.m */; };
+		57D8F2F91B546BB900E3E263 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57D8F2F71B546BB900E3E263 /* Main.storyboard */; };
+		57D8F2FB1B546BB900E3E263 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57D8F2FA1B546BB900E3E263 /* Images.xcassets */; };
+		57D8F2FE1B546BB900E3E263 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57D8F2FC1B546BB900E3E263 /* LaunchScreen.xib */; };
+		57D8F30A1B546BB900E3E263 /* AudioStreamerTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 57D8F3091B546BB900E3E263 /* AudioStreamerTestTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		57D8F3041B546BB900E3E263 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 57D8F2E21B546BB900E3E263 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 57D8F2E91B546BB900E3E263;
+			remoteInfo = AudioStreamerTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		57D8F2EA1B546BB900E3E263 /* AudioStreamerTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudioStreamerTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		57D8F2EE1B546BB900E3E263 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57D8F2EF1B546BB900E3E263 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		57D8F2F11B546BB900E3E263 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		57D8F2F21B546BB900E3E263 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		57D8F2F41B546BB900E3E263 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		57D8F2F51B546BB900E3E263 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		57D8F2F81B546BB900E3E263 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		57D8F2FA1B546BB900E3E263 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		57D8F2FD1B546BB900E3E263 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		57D8F3031B546BB900E3E263 /* AudioStreamerTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AudioStreamerTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		57D8F3081B546BB900E3E263 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57D8F3091B546BB900E3E263 /* AudioStreamerTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioStreamerTestTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		57D8F2E71B546BB900E3E263 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57D8F3001B546BB900E3E263 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		57D8F2E11B546BB900E3E263 = {
+			isa = PBXGroup;
+			children = (
+				57D8F2EC1B546BB900E3E263 /* AudioStreamerTest */,
+				57D8F3061B546BB900E3E263 /* AudioStreamerTestTests */,
+				57D8F2EB1B546BB900E3E263 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		57D8F2EB1B546BB900E3E263 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				57D8F2EA1B546BB900E3E263 /* AudioStreamerTest.app */,
+				57D8F3031B546BB900E3E263 /* AudioStreamerTestTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		57D8F2EC1B546BB900E3E263 /* AudioStreamerTest */ = {
+			isa = PBXGroup;
+			children = (
+				57D8F2F11B546BB900E3E263 /* AppDelegate.h */,
+				57D8F2F21B546BB900E3E263 /* AppDelegate.m */,
+				57D8F2F41B546BB900E3E263 /* ViewController.h */,
+				57D8F2F51B546BB900E3E263 /* ViewController.m */,
+				57D8F2F71B546BB900E3E263 /* Main.storyboard */,
+				57D8F2FA1B546BB900E3E263 /* Images.xcassets */,
+				57D8F2FC1B546BB900E3E263 /* LaunchScreen.xib */,
+				57D8F2ED1B546BB900E3E263 /* Supporting Files */,
+			);
+			path = AudioStreamerTest;
+			sourceTree = "<group>";
+		};
+		57D8F2ED1B546BB900E3E263 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				57D8F2EE1B546BB900E3E263 /* Info.plist */,
+				57D8F2EF1B546BB900E3E263 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		57D8F3061B546BB900E3E263 /* AudioStreamerTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				57D8F3091B546BB900E3E263 /* AudioStreamerTestTests.m */,
+				57D8F3071B546BB900E3E263 /* Supporting Files */,
+			);
+			path = AudioStreamerTestTests;
+			sourceTree = "<group>";
+		};
+		57D8F3071B546BB900E3E263 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				57D8F3081B546BB900E3E263 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		57D8F2E91B546BB900E3E263 /* AudioStreamerTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 57D8F30D1B546BB900E3E263 /* Build configuration list for PBXNativeTarget "AudioStreamerTest" */;
+			buildPhases = (
+				57D8F2E61B546BB900E3E263 /* Sources */,
+				57D8F2E71B546BB900E3E263 /* Frameworks */,
+				57D8F2E81B546BB900E3E263 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AudioStreamerTest;
+			productName = AudioStreamerTest;
+			productReference = 57D8F2EA1B546BB900E3E263 /* AudioStreamerTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		57D8F3021B546BB900E3E263 /* AudioStreamerTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 57D8F3101B546BB900E3E263 /* Build configuration list for PBXNativeTarget "AudioStreamerTestTests" */;
+			buildPhases = (
+				57D8F2FF1B546BB900E3E263 /* Sources */,
+				57D8F3001B546BB900E3E263 /* Frameworks */,
+				57D8F3011B546BB900E3E263 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				57D8F3051B546BB900E3E263 /* PBXTargetDependency */,
+			);
+			name = AudioStreamerTestTests;
+			productName = AudioStreamerTestTests;
+			productReference = 57D8F3031B546BB900E3E263 /* AudioStreamerTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		57D8F2E21B546BB900E3E263 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Ryan King";
+				TargetAttributes = {
+					57D8F2E91B546BB900E3E263 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					57D8F3021B546BB900E3E263 = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = 57D8F2E91B546BB900E3E263;
+					};
+				};
+			};
+			buildConfigurationList = 57D8F2E51B546BB900E3E263 /* Build configuration list for PBXProject "AudioStreamerTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 57D8F2E11B546BB900E3E263;
+			productRefGroup = 57D8F2EB1B546BB900E3E263 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				57D8F2E91B546BB900E3E263 /* AudioStreamerTest */,
+				57D8F3021B546BB900E3E263 /* AudioStreamerTestTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		57D8F2E81B546BB900E3E263 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57D8F2F91B546BB900E3E263 /* Main.storyboard in Resources */,
+				57D8F2FE1B546BB900E3E263 /* LaunchScreen.xib in Resources */,
+				57D8F2FB1B546BB900E3E263 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57D8F3011B546BB900E3E263 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		57D8F2E61B546BB900E3E263 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57D8F2F61B546BB900E3E263 /* ViewController.m in Sources */,
+				57D8F2F31B546BB900E3E263 /* AppDelegate.m in Sources */,
+				57D8F2F01B546BB900E3E263 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57D8F2FF1B546BB900E3E263 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57D8F30A1B546BB900E3E263 /* AudioStreamerTestTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		57D8F3051B546BB900E3E263 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 57D8F2E91B546BB900E3E263 /* AudioStreamerTest */;
+			targetProxy = 57D8F3041B546BB900E3E263 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		57D8F2F71B546BB900E3E263 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				57D8F2F81B546BB900E3E263 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		57D8F2FC1B546BB900E3E263 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				57D8F2FD1B546BB900E3E263 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		57D8F30B1B546BB900E3E263 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		57D8F30C1B546BB900E3E263 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		57D8F30E1B546BB900E3E263 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AudioStreamerTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		57D8F30F1B546BB900E3E263 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AudioStreamerTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		57D8F3111B546BB900E3E263 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = AudioStreamerTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AudioStreamerTest.app/AudioStreamerTest";
+			};
+			name = Debug;
+		};
+		57D8F3121B546BB900E3E263 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = AudioStreamerTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AudioStreamerTest.app/AudioStreamerTest";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		57D8F2E51B546BB900E3E263 /* Build configuration list for PBXProject "AudioStreamerTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57D8F30B1B546BB900E3E263 /* Debug */,
+				57D8F30C1B546BB900E3E263 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		57D8F30D1B546BB900E3E263 /* Build configuration list for PBXNativeTarget "AudioStreamerTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57D8F30E1B546BB900E3E263 /* Debug */,
+				57D8F30F1B546BB900E3E263 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		57D8F3101B546BB900E3E263 /* Build configuration list for PBXNativeTarget "AudioStreamerTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57D8F3111B546BB900E3E263 /* Debug */,
+				57D8F3121B546BB900E3E263 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 57D8F2E21B546BB900E3E263 /* Project object */;
+}
