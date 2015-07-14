@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,33 +17,68 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DEL-ff-XC3">
-                                <rect key="frame" x="257" y="187" width="86" height="30"/>
-                                <state key="normal" title="Play Looped">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I92-wc-nem">
+                                <rect key="frame" x="286" y="252" width="30" height="30"/>
+                                <state key="normal" title="Play">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <state key="selected" title="Pause"/>
                                 <connections>
-                                    <action selector="playButtonPushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aUx-Mg-X8A"/>
+                                    <action selector="playButtonPushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tWS-Ps-tpk"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I92-wc-nem">
-                                <rect key="frame" x="263" y="252" width="75" height="30"/>
-                                <state key="normal" title="Play Once">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loop" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lfy-2m-sMn">
+                                <rect key="frame" x="280" y="223" width="40" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="KSa-4f-tx6">
+                                <rect key="frame" x="344" y="218" width="51" height="31"/>
                                 <connections>
-                                    <action selector="playOnceButtonPushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HQz-4b-hih"/>
+                                    <action selector="loopSwitchChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="Mbd-Fa-Wf6"/>
                                 </connections>
-                            </button>
+                            </switch>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="0qA-DH-9hh">
+                                <rect key="frame" x="241" y="138" width="118" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="114" id="sLe-QT-n5j"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="playheadSliderTouchBegin:" destination="BYZ-38-t0r" eventType="touchDown" id="GH3-la-M6A"/>
+                                    <action selector="playheadSliderTouchEnd:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="Lc0-j7-n0I"/>
+                                    <action selector="playheadSliderTouchEnd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rw1-1a-0cQ"/>
+                                </connections>
+                            </slider>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="0qA-DH-9hh" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="118" id="0Iy-4z-vt8"/>
+                            <constraint firstAttribute="centerY" secondItem="0qA-DH-9hh" secondAttribute="centerY" constant="147" id="8cr-5S-cRc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="0qA-DH-9hh" secondAttribute="trailing" constant="227" id="JyX-NU-lTf"/>
                             <constraint firstAttribute="centerY" secondItem="I92-wc-nem" secondAttribute="centerY" constant="33" id="LW5-3l-93C"/>
-                            <constraint firstAttribute="centerX" secondItem="DEL-ff-XC3" secondAttribute="centerX" id="ToZ-aW-nWC"/>
-                            <constraint firstAttribute="centerY" secondItem="DEL-ff-XC3" secondAttribute="centerY" constant="98" id="lD1-R8-NG0"/>
+                            <constraint firstItem="KSa-4f-tx6" firstAttribute="leading" secondItem="Lfy-2m-sMn" secondAttribute="trailing" constant="24" id="OK7-2L-uM9"/>
+                            <constraint firstItem="0qA-DH-9hh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="227" id="RN2-7d-unW"/>
+                            <constraint firstItem="KSa-4f-tx6" firstAttribute="centerY" secondItem="Lfy-2m-sMn" secondAttribute="centerY" id="UhC-5A-k6p"/>
+                            <constraint firstAttribute="centerY" secondItem="Lfy-2m-sMn" secondAttribute="centerY" constant="66.5" id="YrM-Rv-t3U"/>
+                            <constraint firstAttribute="centerX" secondItem="0qA-DH-9hh" secondAttribute="centerX" id="d4n-ND-Uwn"/>
+                            <constraint firstAttribute="centerX" secondItem="Lfy-2m-sMn" secondAttribute="centerX" id="jUA-vo-nfu"/>
                             <constraint firstAttribute="centerX" secondItem="I92-wc-nem" secondAttribute="centerX" constant="-0.5" id="ovC-Ug-7qm"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="0qA-DH-9hh" secondAttribute="trailing" constant="227" id="t48-CN-raI"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="0Iy-4z-vt8"/>
+                                <exclude reference="JyX-NU-lTf"/>
+                                <exclude reference="RN2-7d-unW"/>
+                                <exclude reference="t48-CN-raI"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="playButton" destination="I92-wc-nem" id="0Lv-wO-iBd"/>
+                        <outlet property="playheadSlider" destination="0qA-DH-9hh" id="UKX-QP-Xvq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

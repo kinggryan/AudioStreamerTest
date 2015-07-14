@@ -9,9 +9,13 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UISlider *playheadSlider;
 
+@property (weak, nonatomic) IBOutlet UIButton *playButton;
 - (IBAction)playButtonPushed:(id)sender;
-- (IBAction)playOnceButtonPushed:(id)sender;
+- (IBAction)loopSwitchChanged:(id)sender;
+- (IBAction)playheadSliderTouchBegin:(id)sender;
+- (IBAction)playheadSliderTouchEnd:(id)sender;
 
 @end
 
